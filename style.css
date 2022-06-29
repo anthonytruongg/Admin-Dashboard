@@ -13,14 +13,12 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     
 }
 .header {
     background-color: white;
     color: black;
     font-size: 20px;
-    text-align: center;
     padding: 10px;
 }
 
@@ -54,9 +52,8 @@ body {
 
 .announcements, .trending, .yourProjects {
     text-align: left;
-    font-size: 18px;
+    font-size: 28px;
     padding: 10px;
-    margin: 0;
 }
 
 .announceContainer {
@@ -99,6 +96,7 @@ body {
 .dashboard {
     padding: 20px;
     font-size: 32px;
+    color: white;
 }
 
 
@@ -109,6 +107,7 @@ body {
 .home, .profile, .messages, .history,
 .tasks, .communities, .settings, .support , .privacy {
     padding: 20px;
+    color: white;
 }
 
 .top {
@@ -119,26 +118,28 @@ body {
 
 
 .header {
-    grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 .searchBar input[type=text] {
     background-color: lightgray;
     border-radius: 10px;
     padding: 6px;
-    margin-top: 8px;
-    margin-right: 16px;
+    
     border: none;
     font-size: 17px;
 
-    width: 50%;
-    
-}    
+    width: 75%;
+}   
+
+.searchBar {
+    grid-column: 1 / 2;
+    padding: 10px;
+}
 
 .greeting {
-    padding: 10px;
+    padding: 50px;
     text-align: left;
 }
 .username {
@@ -146,16 +147,27 @@ body {
     text-align: left;
 }
 
-.bottom {
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
+.rightHeader {
+    text-align: right;
+    display: grid;
+}
+.userInfo {
+    grid-row: 2 / 3;
+}
+.buttons {
+    grid-row: 3 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+
 }
 
-
 button {
-    border-radius: 10px;
+    border-radius: 40px;
     background-color: rgb(175, 175, 228);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 5px;
+    font-size: 20px;
+
 }
